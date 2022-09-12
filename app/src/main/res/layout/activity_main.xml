@@ -6,10 +6,39 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <TextView
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="130dp"
+        android:gravity="center"
+        android:text="노력이란 포기하지 않는 사람에게서\n 그 진정한 가치를 발휘한다.\n \n- 나폴레온 힐 Napoleon Hill-
+"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="D-DAY"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
     <ImageView
-        android:src="@drawable/img1"
-        android:scaleType="fitXY"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/img1"/>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
