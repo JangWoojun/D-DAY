@@ -3,6 +3,7 @@ package com.example.d_day
 import android.app.DatePickerDialog
 import android.icu.util.Calendar
 import android.icu.util.GregorianCalendar
+import android.icu.util.TimeUnit
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -23,6 +24,8 @@ class MainActivity : AppCompatActivity() {
 
         var startDate = ""
         var endDate = ""
+        val calendar_start = Calendar.getInstance()
+        val calendar_end = Calendar.getInstance()
 
         start.setOnClickListener {
 
@@ -34,7 +37,12 @@ class MainActivity : AppCompatActivity() {
             val dlg = DatePickerDialog(this, object : DatePickerDialog.OnDateSetListener{
                 override fun onDateSet(p0: DatePicker?, year: Int, month: Int, day: Int) {
                     startDate =  year.toString() + (month+1).toString()+ day.toString()
+
+                    calendar_start.set(year,month+1,day)
+
                     Log.d("day : ",startDate)
+
+
                 }
 
             },year,month,day)
@@ -50,9 +58,14 @@ class MainActivity : AppCompatActivity() {
             val dlg = DatePickerDialog(this, object : DatePickerDialog.OnDateSetListener{
                 override fun onDateSet(p0: DatePicker?, year: Int, month: Int, day: Int) {
                     endDate =  year.toString() + (month+1).toString()+ day.toString()
+
+                    calendar_end.set(year,month+1,day)
+
+                    val finalDate = java.util.concurrent.TimeUnit.MILLISECONDS.toDays(calendar_end.timeInMillis - calendar_start.timeInMillis)
+
                     Log.d("day : ",endDate)
 
-                    findViewById<TextView>(R.id.showDate).setText((endDate.toInt() - startDate.toInt()+1).toString())
+                    findViewById<TextView>(R.id.showDate).setText("+"+finalDate.toString())
                 }
 
             },year,month,day)
