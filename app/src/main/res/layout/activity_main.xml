@@ -12,8 +12,8 @@
         android:layout_marginRight="100dp"
         android:layout_marginTop="130dp"
         android:gravity="center"
-        android:text="노력이란 포기하지 않는 사람에게서\n 그 진정한 가치를 발휘한다.\n \n- 나폴레온 힐 Napoleon Hill-
-"
+        android:text="노력이란 포기하지 않는 사람에게서\n 그 진정한 가치를 발휘한다.\n \n- 나폴레온 힐 Napoleon Hill-"
+        android:textStyle="bold"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -39,6 +39,33 @@
         android:scaleType="fitXY"
         android:src="@drawable/img1"/>
 
+    <TextView
+        android:id="@+id/showDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
+    <Button
+        android:id="@+id/startBtn"
+        android:layout_margin="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="시작일"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/endBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="종료일"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
