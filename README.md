@@ -1,5 +1,6 @@
 # D-DAY
 
+<img width="404" alt="스크린샷 2022-09-30 오후 11 49 30" src="https://user-images.githubusercontent.com/102157871/193298555-9f3da52c-bce3-42b8-a93b-80f1f940a9df.png">
 <img width="419" alt="스크린샷 2022-09-12 오후 7 25 52" src="https://user-images.githubusercontent.com/102157871/189632640-6839360f-e704-4c56-9977-e8828a810c72.png">
 <img width="418" alt="스크린샷 2022-09-12 오후 7 26 14" src="https://user-images.githubusercontent.com/102157871/189632729-c079f3c3-774c-4ed2-a0aa-335fccc326ea.png">
 <img width="415" alt="스크린샷 2022-09-12 오후 7 26 47" src="https://user-images.githubusercontent.com/102157871/189632736-90834a2c-5525-478d-aadc-cc5d53077641.png">
